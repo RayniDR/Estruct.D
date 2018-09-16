@@ -4,7 +4,7 @@ def pri(numero):
 		 
 	 if numero<=100:
 	   
-	   numero+1
+	   
 	   print(numero)
 	   pri(numero+1)
 	 else:
@@ -35,8 +35,8 @@ def menu(op):
 		for i in range(numero):
 			print fibo(i)
 	else:
-		opc=int(input(" 1 para imprimir 100 primeros numeros, 2 para factorial, 3 fibonachi: " ))
+		opc=int(input(" 1 para imprimir 100 primeros numeros, 2 para factorial, 3 fibonacci: " ))
 		menu(opc)
 		
-opc=int(input(" 1 para imprimir 100 primeros numeros, 2 para factorial, 3 fibonachi" ))
+opc=int(input(" 1 para imprimir 100 primeros numeros, 2 para factorial, 3 fibonacci " ))
 menu(opc)
