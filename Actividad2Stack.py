@@ -19,11 +19,15 @@ def peek():
     print(pila[opc])
  
 def pop():
+	if len(pila)>0:
 	
-	print (pila.pop())
-	print(pila)
+		print (pila.pop())
+		print(pila)
+	else:
+		  print("La pila esta vacia")
+	
     
-        
+      
 while index>=0 and index<5:
 	
 	
@@ -39,6 +43,6 @@ def menu(opc):
 	elif opc==3:
 		pop()
 while sele!=4:
-	sele=int(input(" Ingrese 1 para impriir la pila \n 2 para seleccionar un elemento \n 3 para pop \n 4 para salir: "))
+	sele=int(input(" Ingrese 1 para imprimir la pila \n 2 para seleccionar un elemento \n 3 para pop \n 4 para salir: "))
 	menu(sele)
 	
